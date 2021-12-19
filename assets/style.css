@@ -1,0 +1,494 @@
+/*.container {
+    width: 80vw;
+    height: 80vh;
+
+    font-family: 'quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    
+
+    gap: 10px;
+
+    padding: 10px;
+    box-sizing: border-box;
+}
+*/
+.main-block {
+    width: 40vw;
+    height: 80vh;
+
+    font-family: 'quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    max-height: 100%;
+  }
+  html {
+    height: 100%;
+  }
+  /* Header/logo Title */
+  .header {
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+  }
+  
+  /* Increase the font size of the heading */
+  .header h1 {
+    font-size: 40px;
+  }
+  
+  /* Style the top navigation bar */
+  .navbar {
+    overflow: hidden;
+    background-color: transparent;
+    display: flex;
+  }
+  
+
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+    margin: auto;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6A707B;
+  }
+  
+  /* Right-aligned link */
+  .navbar a.right {
+    float: right;
+    margin-left: 10px;
+  }
+  
+  h5.title {
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 0;
+
+    color: #131821;
+    padding: 0 10% 0 10%;
+  }
+  
+  p.sub-title {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0 10% 0 10%;
+    color: #6A707B;
+  }
+
+  .agree-check-title {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6A707B;
+  }
+  /* Column container */
+  .row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    -ms-flex: 35%; /* IE10 */
+    flex: 35%;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+    display: flex;
+  }
+  
+  /* Main column */
+  .main {   
+    -ms-flex: 65%; /* IE10 */
+    flex: 65%;
+    background-color: white;
+    height: 100vh;
+  }
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  .full-body-img {
+    position: relative;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  /* Fake image, just for this example */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+  }
+
+  .container {
+    height: 100vh;
+  }
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    /*.navbar a {
+      float: none;
+      width: 100%;
+    }*/
+  }
+
+  .center {
+    margin: auto;
+  }
+
+  .logo {
+    margin-right: 15px;
+  }
+
+  .logo-image {
+    margin-left: 20px!important;
+
+  }
+
+  .email-input {
+    font-size: 13px;
+    width: 80%;
+    height: 50px;
+    border: none;
+    box-sizing: border-box;
+    color: #000;
+    border-left: 2px solid #4066A5;
+    margin: 0 10% 0 10%;
+    padding-left: 20px;
+  }
+    .email-input:focus {
+      outline: none;
+    }
+
+  .search-button {
+    font-size: 0.8125em;
+    position: absolute;
+}
+
+.checkbox {
+  background: #4066A5;
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
+}
+
+.terms-checkbox {
+  margin: 10px 10% 10px 10%;
+}
+
+.icons {
+  margin: 10px 10% 10px 10%;
+  text-align: center;
+}
+
+/*svg {
+  background: #FF7A59;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+}
+*/
+
+.facebook-icon, .instagram-icon, .twitter-icon, .youtube-icon {
+  height: 40px;
+  width: 40px;
+  border: 2px solid #E3E3E4;
+  border-radius: 50%;
+  display: inline-flex;
+}
+
+.fa-facebook, .fa-instagram, .fa-twitter, .fa-youtube {
+  display: flex;
+  margin: auto;
+  opacity: 0.3;
+}
+
+.facebook-icon:hover {
+  background: #4267B2;
+  border: 2px solid #4267B2;
+}
+
+.facebook-icon:hover .fa-facebook {
+  color: #fff;
+  opacity: 1;
+}
+
+.instagram-icon:hover {
+  background: #C13584;
+  border: 2px solid #C13584;
+}
+
+.instagram-icon:hover .fa-instagram {
+  color: #fff;
+  opacity: 1;
+}
+
+.twitter-icon:hover {
+  background: #1DA1F2;
+  border: 2px solid #1DA1F2;
+}
+
+.twitter-icon:hover .fa-twitter {
+  color: #fff;
+  opacity: 1;
+}
+
+.youtube-icon:hover {
+  background: #FF0000;
+  border: 2px solid #FF0000;
+}
+
+.youtube-icon:hover .fa-youtube {
+  color: #fff;
+  opacity: 1;
+}
+
+.facebook-icon:focus {
+  background: #2F4A80;
+  border: 2px solid #2F4A80;
+}
+
+.facebook-icon:focus .fa-facebook {
+  color: #fff;
+  opacity: 1;
+}
+
+.instagram-icon:focus {
+  background: #8F2762;
+  border: 2px solid #8F2762;
+}
+
+.instagram-icon:focus .fa-instagram {
+  color: #fff;
+  opacity: 1;
+}
+
+.twitter-icon:focus {
+  background: #177FBF;
+  border: 2px solid #177FBF;
+}
+
+.twitter-icon:focus .fa-twitter {
+  color: #fff;
+  opacity: 1;
+}
+
+.youtube-icon:focus {
+  background: #CC0000;
+  border: 2px solid #CC0000;
+}
+
+.youtube-icon:focus .fa-youtube {
+  color: #fff;
+  opacity: 1;
+}
+
+hr.solid {
+  border-top: 1px solid #E3E3E4;
+  margin: 40px 0 40px 0;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+a.link {
+  text-decoration: underline 1px solid #131821;
+  color: #131821;
+}
+
+a.link:hover {
+  text-decoration: underline 1px solid #4066A5;
+  color: #4066A5;
+}
+
+a.link:focus {
+  text-decoration: underline 1px solid #233759;
+  color: #233759;
+}
+
+
+
+@media screen and (max-width: 1079px) {
+body {
+  background-image: url('/assets/image_summer.png');
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when
+  the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+  on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+  while the background image is loading */
+  background-color: #464646;
+  }
+
+  .side {
+    background: none;
+  }
+
+  .main {
+    display: none;
+  }
+
+  .card {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%)!important;
+    margin: 0 20px 0 20px;
+  }
+
+  .card-content {
+    padding: 5% 5% 5% 5%;
+  }
+
+  p.sub-title {
+    font-size: 14px;
+  }
+
+  .agree-check-title {
+    font-size: 14px;
+  }
+
+  h5.title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+
+  #pineapple {
+    display: none;
+  }
+
+  .navbar {
+    background: #FFFFFF;
+    width: 100vw;
+  }
+
+  .logo {
+    margin-right: 0px;
+  }
+
+  hr.solid {
+    margin: 10px 0 10px 0;
+  }
+}
+
+.card {
+  background: none;
+}
+
+.navbar {
+  margin-bottom:100px;
+}
+
+#pineapple {
+  padding-bottom: 7px;
+}
+
+div.checkbox-text {
+  display: inline;
+}
+
+.link-list {
+  display: inline-flex;
+  margin-right: 10px;
+}
+
+.fa {
+  color: #131821;
+}
+
+input[type="text"] {
+}
+
+input[type="submit"] {
+  margin-left: -50px;
+  height: 25px;
+  width: 50px;
+  background: blue;
+  color: white;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+.error-message {
+  color: #cc0033;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0 10% 0 10%;
+  display: none;
+
+}
